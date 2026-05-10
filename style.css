@@ -5,6 +5,11 @@ body {
     text-align: center;
 }
 
+a:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #dd4a4a;
+}
+
 .cards-container {
     display: flex;
     gap: 20px;
@@ -22,6 +27,7 @@ body {
     border: 2px solid #dd4a4a;
     max-width: 300px;
     padding: 10px;
+    border-radius: 10px;
 }
 
 .card .image-link {
@@ -32,11 +38,6 @@ body {
     align-items: center;
     justify-content: center;
     padding: 10px;
-}
-
-.card .image-link:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px #dd4a4a;
 }
 
 .card .image-link:hover {
@@ -78,7 +79,7 @@ body {
 }
 
 .socials-container h2 {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .socials-container {
