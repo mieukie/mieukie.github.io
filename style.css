@@ -5,6 +5,11 @@ body {
     text-align: center;
 }
 
+::selection {
+    background-color: #dd4a4a;
+    color: #fffaf9;
+}
+
 a:focus {
     outline: none;
     box-shadow: 0 0 0 2px #dd4a4a;
