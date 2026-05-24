@@ -15,6 +15,15 @@ a:focus {
     box-shadow: 0 0 0 2px #dd4a4a;
 }
 
+h1 {
+    display: none;
+}
+
+.main-title {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
 .cards-container {
     display: flex;
     gap: 20px;
