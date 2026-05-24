@@ -15,7 +15,7 @@ a:focus {
     box-shadow: 0 0 0 2px #dd4a4a;
 }
 
-h1 {
+h1.hidden-title {
     display: none;
 }
 
