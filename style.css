@@ -38,8 +38,8 @@ a:focus:hover {
     color: #ff656a;
 }
 
-a {
-    -webkit-tap-highlight-color: #dd4a4a;
+body a {
+    -webkit-tap-highlight-color: transparent;
 }
 
 header {
@@ -87,7 +87,7 @@ header img.basiileaf-cat {
     }
 }
 
-@media (hover: none) or (pointer: coarse) {
+@media (hover: none) or (any-pointer: coarse) {
     header img.basiileaf-cat:first-child.spin {
         transform: rotate(360deg);
         transition: transform 0.5s ease-in-out;
@@ -231,7 +231,7 @@ header img.basiileaf-cat {
     border: 2px solid #db6161;
 }
 
-@media (hover: none) or (pointer: coarse) {
+@media (hover: none) or (any-pointer: coarse) {
   .image-link:hover .star-overlay {
     mask-size: 100% 100%, 280px; 
     transition: mask-size 0.3s ease-in;
