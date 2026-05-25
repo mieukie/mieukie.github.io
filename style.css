@@ -72,13 +72,26 @@ header img.basiileaf-cat {
     height: 60px;
 }
 
-header img.basiileaf-cat:first-child:hover {
+@media (hover: hover) {
+    header img.basiileaf-cat:first-child:hover {
     transform: rotate(360deg);
     transition: transform 0.5s ease-in-out;
+    }
+    header img.basiileaf-cat:last-child:hover {
+        transform: rotate(-360deg);
+        transition: transform 0.5s ease-in-out;
+    }
 }
-header img.basiileaf-cat:last-child:hover {
-    transform: rotate(-360deg);
-    transition: transform 0.5s ease-in-out;
+
+@media (hover: none) {
+    header img.basiileaf-cat:first-child.spin {
+        transform: rotate(360deg);
+        transition: transform 0.5s ease-in-out;
+    }
+    header img.basiileaf-cat:last-child.spin {
+        transform: rotate(-360deg);
+        transition: transform 0.5s ease-in-out;
+    }
 }
 
 .title-span-container {
@@ -125,6 +138,12 @@ header img.basiileaf-cat:last-child:hover {
     }
     .intro-text p {
         margin: 0 0 5px 0;
+    }
+    header {
+        gap: 10px;
+    }
+    main.cards-container {
+        gap: 30px;
     }
 }
 
@@ -296,4 +315,5 @@ footer {
     margin-top: 80px;
     font-size: 0.9em;
     position: relative;
+    padding: 0 15px;
 }

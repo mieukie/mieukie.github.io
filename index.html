@@ -80,7 +80,7 @@
         </article>
     </main>
     <section class="socials-container">
-        <h2>and im on this stuff too:</h2>
+        <h2>im on this stuff too:</h2>
         <div class="socials">
             <a href="https://github.com/mieukie" target="_blank">
                 <img src="img/github.svg" alt="GitHub" class="social-icon">
@@ -134,5 +134,14 @@
 
     imageLinks.forEach(link => {
         scrollObserver.observe(link);
+    });
+
+    const spinCats = document.querySelectorAll('.basiileaf-cat');
+    spinCats.forEach(cat => {
+        cat.addEventListener('click', () => {
+            cat.classList.remove('spin');
+            cat.offsetWidth;
+            cat.classList.add('spin');
+        });
     });
 </script>
