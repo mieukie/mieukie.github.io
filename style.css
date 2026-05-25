@@ -123,6 +123,9 @@ header img.basiileaf-cat:last-child:hover {
     .intro-text {
         padding: 15px;
     }
+    .intro-text p {
+        margin: 0 0 5px 0;
+    }
 }
 
 .semicircle-container {
@@ -199,6 +202,21 @@ header img.basiileaf-cat:last-child:hover {
 
 .image-link:hover .card-image {
     opacity: 1;
+}
+
+.image-link:hover {
+    border: 2px solid #db6161;
+}
+
+@media (hover: none) {
+  .image-link:hover .star-overlay {
+    mask-size: 100% 100%, 280px; 
+    transition: mask-size 0.3s ease-in;
+  }
+  .image-link.is-in-view .star-overlay {
+    mask-size: 100% 100%, 1000px;
+    transition: mask-size 0.5s ease-in-out;
+  }
 }
 
 .card .text-link {
