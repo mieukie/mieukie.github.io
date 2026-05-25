@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mieukie</title>
-    <meta name="description" content="Mieukie is an indie web developer and digital creator involved in several projects related to the D&D group known as The Runaways.">
+    <meta name="description" content="Mieukie is an indie web developer and digital creator involved in several projects related to The Runaways D&D group.">
     <meta name="keywords" content="mieukie, runaways, the runaways, runaways dnd, the runaways dnd, runaways happy hour, atlasafk, web development, game development">
     <meta name="author" content="mieukie">
     <meta property="og:title" content="mieukie">
@@ -106,42 +106,39 @@
     <footer>
         <p>♡ cat drawings are by <a href="https://www.instagram.com/basiilleaf.png/" target="_blank">basiileaf</a> and brand svgs from <a href="https://simpleicons.org/" target="_blank">simpleicons</a> ♡</p>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
 
-<script>
-    document.getElementById('spanShift').addEventListener('click', function() {
-        this.classList.toggle('shifting');
-    });
 
-    const imageLinks = document.querySelectorAll('.image-link');
-
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 1    
-    };
-
-    const scrollObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('is-in-view');
-        } else {
-            entry.target.classList.remove('is-in-view'); 
-        }
-        });
-    }, observerOptions);
-
-    imageLinks.forEach(link => {
-        scrollObserver.observe(link);
-    });
-
-    const spinCats = document.querySelectorAll('.basiileaf-cat');
-    spinCats.forEach(cat => {
-        cat.addEventListener('click', () => {
-            cat.classList.remove('spin');
-            cat.offsetWidth;
-            cat.classList.add('spin');
-        });
-    });
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://mieukie.github.io/",
+      "name": "mieukie",
+      "url": "https://mieukie.github.io/",
+      "image": "https://mieukie.github.io/img/placeholder.webp",
+      "sameAs": [
+        "https://www.itch.io/profile/mieukie",
+        "https://www.nexusmods.com/profile/mieukie",
+        "https://www.github.com/mieukie"
+      ],
+      "knowsAbout": ["Web Development", "Game Development", "UI/UX Design","JavaScript", "HTML", "CSS", "Ren'Py"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://mieukie.github.io/",
+      "url": "https://mieukie.github.io/",
+      "name": "mieukie",
+      "description": "Personal website of mieukie, an indie web developer and digital creator involved in several projects related to the The Runaways D&D group.",
+      "publisher": {
+        "@id": "https://mieukie.github.io/"
+      }
+    }
+  ]
+}
 </script>
