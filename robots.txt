@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://mieukie.github.io/sitemap.xml
+Sitemap: https://mieukie.com/sitemap.xml

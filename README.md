@@ -1,3 +1,3 @@
-# mieukie.github.io
+# mieukie.com
 
 it has the stuff...
